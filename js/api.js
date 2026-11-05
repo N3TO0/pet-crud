@@ -43,6 +43,16 @@ const api = {
       alert("Não foi possivel salvar os dados");
     }
   },
+  async excluirPet(id) {
+    try {
+      const response = await fetch(`http://localhost:3000/pets/${id}`, {
+        method: "DELETE",
+      });
+    } catch (e) {
+      console.log(`Erro: ${e}`);
+      alert("Não foi possivel salvar os dados");
+    }
+  },
 };
 
 export default api;

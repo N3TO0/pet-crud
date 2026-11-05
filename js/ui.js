@@ -18,20 +18,30 @@ const ui = {
 
   renderPets(pet, listaPets) {
     const li = document.createElement("li");
-    const plist = document.createElement("p");
-    const pbutton = document.createElement("p");
-    plist.textContent = `Nome: ${pet.nome} | Raça: ${pet.raca} | Especie: ${pet.especie}. `;
+    const pList = document.createElement("p");
+    const pButtonEdit = document.createElement("p");
+    const pButtonDelete = document.createElement("p");
+    pList.textContent = `Nome: ${pet.nome} | Raça: ${pet.raca} | Especie: ${pet.especie}. `;
 
-    const button = document.createElement("button");
-    button.appendChild(pbutton);
-    pbutton.textContent = "editar";
+    const buttonEdit = document.createElement("button");
+    buttonEdit.appendChild(pButtonEdit);
+    pButtonEdit.textContent = "editar";
 
-    button.onclick = () => {
+    buttonEdit.onclick = () => {
       ui.filForms(pet.id);
     };
 
-    li.appendChild(plist);
-    li.appendChild(button);
+    const buttonDelete = document.createElement("button");
+    buttonDelete.appendChild(pButtonDelete);
+    pButtonDelete.textContent = "excluir";
+
+    buttonDelete.onclick = () => {
+      api.excluirPet(pet.id);
+    };
+
+    li.appendChild(pList);
+    li.appendChild(buttonEdit);
+    li.appendChild(buttonDelete);
     listaPets.appendChild(li);
   },
 
@@ -40,7 +50,8 @@ const ui = {
 
     const id = (document.querySelector("#input-id").value = pet.id);
     const nome = (document.querySelector("#input-name").value = pet.nome);
-    const especie = (document.querySelector("#input-especie").value = pet.especie);
+    const especie = (document.querySelector("#input-especie").value =
+      pet.especie);
     const raca = (document.querySelector("#input-raca").value = pet.raca);
   },
 };
