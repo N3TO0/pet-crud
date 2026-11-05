@@ -18,8 +18,6 @@ Pet-Crut é um site organizador de dados de pets que permite cadastrar, listar, 
 
 `Fetch API`: Utilizada para realizar requisições HTTP para comunicação com o servidor.
 
-`Axios`: Biblioteca usada para facilitar e simplificar as requisições HTTP.
-
 `Node.js`: Plataforma utilizada para executar o ambiente de desenvolvimento.
 
 `JSON Server`: Utilizado para simular um backend e facilitar o desenvolvimento e teste das operações CRUD.
@@ -28,7 +26,7 @@ Pet-Crut é um site organizador de dados de pets que permite cadastrar, listar, 
 
 ## 📁 Link do Figma
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/design/Sz1gmmemxqcB3amInL4Ndp/Rebrand-Memoteca-%7C-Curso-CRUD?node-id=148-26&t=FpdmfbiM1i1s6REQ-0).
+Você pode [acessar o figma do projeto aqui]().
 
 ## 🛠️ Abrir e rodar o projeto
 
