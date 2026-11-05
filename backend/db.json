@@ -1,18 +1,6 @@
 {
   "pets": [
     {
-      "id": "1a2b",
-      "nome": "Mia",
-      "especie": "Siamês",
-      "raca": "felina"
-    },
-    {
-      "id": "2b3c",
-      "especie": "canina",
-      "nome": "Rex",
-      "raca": "Labrador"
-    },
-    {
       "id": "3c4d",
       "especie": "felina",
       "nome": "Luna",
